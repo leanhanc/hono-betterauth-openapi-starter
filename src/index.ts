@@ -1,9 +1,12 @@
-import { Hono } from 'hono';
+/* App */
+import app from './app';
 
-const app = new Hono();
+export interface ServerExport {
+	port: number;
+	fetch: App['fetch'];
+}
 
-app.get('/', (c) => {
-	return c.text('Hello Hono!');
-});
-
-export default app;
+export default {
+	port: process.env['PORT'] ?? 4000,
+	fetch: app.fetch,
+} as ServerExport;
