@@ -10,3 +10,5 @@ export default {
 	port: process.env['PORT'] ?? 4000,
 	fetch: app.fetch,
 } as ServerExport;
+
+export type App = typeof app;

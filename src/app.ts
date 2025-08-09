@@ -6,7 +6,7 @@ import type { AppBindings } from './lib/types/bindings';
 
 /* Utils */
 import injectMiddleware from './middleware';
-import configureOpenAPI from './lib/utils/openapi';
+import configureOpenAPI from './lib/utils/openApi';
 
 const app = new OpenAPIHono<AppBindings>({ strict: false, defaultHook });
 

@@ -11,7 +11,7 @@ import type { AppBindings } from '../lib/types';
 /* Middleware */
 import pinoMiddleware from './pino';
 import rateLimiter from './rateLimiter';
-import sessionMiddleware from './session';
+// import sessionMiddleware from './session';
 
 export default function injectMiddleware(app: OpenAPIHono<AppBindings>) {
 	app.notFound(notFound);
@@ -29,7 +29,7 @@ export default function injectMiddleware(app: OpenAPIHono<AppBindings>) {
 			}),
 		)
 		.use(secureHeaders())
-		.use(sessionMiddleware())
+		// .use(sessionMiddleware())
 		.use(rateLimiter())
 		.use(pinoMiddleware())
 		.use(prettyJSON())
