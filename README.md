@@ -51,7 +51,7 @@ DATABASE_URL=
 
 - **Hot reload:** Changes automatically restart the server
 - **Type safety:** Full TypeScript support with strict mode
-- **API docs:** Auto-generated OpenAPI documentation at `/api-docs` and `/api-betterauth` (Better Auth specific endpoints)
+- **API docs:** Auto-generated OpenAPI documentation at `/api-docs` and `/betterauth-docs` (Better Auth specific endpoints)
 - **Code formatting:** Prettier with consistent formatting rules
 - **Linting:** ESLint with TypeScript support and recommended rules
 

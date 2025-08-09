@@ -1,5 +1,5 @@
 /* Utils */
-import { auth } from '@api/lib/utils/auth';
+import { auth } from '../lib/utils/auth';
 
 /* Types */
 import type { Context } from 'hono';
