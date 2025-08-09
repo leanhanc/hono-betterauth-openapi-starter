@@ -1,14 +1,24 @@
 {
-  "name": "hono-betterauth-openapi-starter",
-  "scripts": {
-    "dev": "bun run --hot src/index.ts",
-    "build": "bun build src/index.ts --outfile ./dist/index.js",
-    "start": "bun run dist/index.js"
-  },
-  "dependencies": {
-    "hono": "^4.9.0"
-  },
-  "devDependencies": {
-    "@types/bun": "latest"
-  }
+	"name": "hono-betterauth-openapi-starter",
+	"scripts": {
+		"dev": "bun run --hot src/index.ts",
+		"build": "bun build src/index.ts --outfile ./dist/index.js",
+		"start": "bun run dist/index.js",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"format": "prettier --write ."
+	},
+	"type": "module",
+	"dependencies": {
+		"hono": "^4.9.0"
+	},
+	"devDependencies": {
+		"@types/bun": "latest",
+		"eslint": "^9.28.0",
+		"eslint-config-prettier": "^10.1.5",
+		"eslint-plugin-import": "^2.31.0",
+		"prettier": "^3.5.3",
+		"typescript": "^5.8.3",
+		"typescript-eslint": "^8.33.1"
+	}
 }

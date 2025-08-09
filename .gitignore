@@ -11,8 +11,6 @@ build/
 # TypeScript
 *.tsbuildinfo
 
-# Lint cache
-.eslintcache
 
 # Logs
 logs/
@@ -34,4 +32,7 @@ temp/
 
 # Local dev databases (e.g., Drizzle + SQLite)
 *.sqlite
-*.db
+*.db}
+
+# VSCode
+.vscode/
